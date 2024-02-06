@@ -52,11 +52,11 @@ function calculateDate() {
 <template>
   <main
     class="flex flex-col items-start border border-solid border-transparent bg-white rounded-t-2xl rounded-bl-2xl rounded-br-[200px] w-[715px] h-[530px] p-10 font-poppins shadow-lg">
-    <div class="flex flex-co gap-9 w-[600px]">
+    <div class="flex flex-co gap-7 w-[600px]">
       <div>
         <h1 class="uppercase font-semibold opacity-60 mb-2" :class="{'text-red-500': error.db || notValid.db, 'uppercase font-semibold opacity-60 mb-2': true}">Day</h1>
         <input
-          class="border-2 border-solid border-l-grey text-[32px] w-36 font-bold rounded-lg px-4 py-1 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none hover:border-black"
+          class="border-2 border-solid border-l-grey text-[32px] w-40 font-bold rounded-lg px-4 py-1 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none hover:border-black"
           type="number" v-model="db" placeholder="DD">
         <p v-if="error.db" class="text-red-500 text-[14px] text-opacity-[80%] italic mt-1">This field is required</p>
         <p v-if="notValid.db" class="text-red-500 text-[14px] text-opacity-[80%] italic mt-1">Must be valid day</p>
@@ -64,7 +64,7 @@ function calculateDate() {
       <div>
         <h2 class="uppercase font-semibold opacity-60 mb-2" :class="{'text-red-500': error.mb || notValid.mb, 'uppercase font-semibold opacity-60 mb-2': true}">Month</h2>
         <input
-          class="border-2 border-solid border-l-grey text-[32px] w-36 font-bold rounded-lg px-4 py-1 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none hover:border-black"
+          class="border-2 border-solid border-l-grey text-[32px] w-40 font-bold rounded-lg px-4 py-1 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none hover:border-black"
           type="number" v-model="mb" placeholder="MM">
         <p v-if="error.mb" class="text-red-500 text-[14px] text-opacity-[80%] italic mt-1">This field is required</p>
         <p v-if="notValid.mb" class="text-red-500 text-[14px] text-opacity-[80%] italic mt-1">Must be a valid month</p>
@@ -72,7 +72,7 @@ function calculateDate() {
       <div>
         <h3 class="uppercase font-semibold opacity-60 mb-2" :class="{'text-red-500': error.yb || notValid.yb, 'uppercase font-semibold opacity-60 mb-2': true}">Year</h3>
         <input
-          class="border-2 border-solid border-l-grey text-[32px] w-36 font-bold rounded-lg px-4 py-1 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none hover:border-black"
+          class="border-2 border-solid border-l-grey text-[32px] w-40 font-bold rounded-lg px-4 py-1 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none hover:border-black"
           type="number" v-model="yb" placeholder="YYYY">
         <p v-if="error.yb" class="text-red-500 text-[14px] text-opacity-[80%] italic mt-1">This field is required</p>
         <p v-if="notValid.yb" class="text-red-500 text-[14px] text-opacity-[80%] italic mt-1">Must be in the past</p>
