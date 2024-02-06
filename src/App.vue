@@ -52,7 +52,7 @@ function calculateDate() {
 <template>
   <main
     class="flex flex-col items-start border border-solid border-transparent bg-white rounded-t-2xl rounded-bl-2xl rounded-br-[200px] w-[715px] h-[530px] p-10 font-poppins shadow-lg">
-    <div class="flex flex-co gap-7 w-[600px]">
+    <div class="flex flex-co gap-9 w-[600px]">
       <div>
         <h1 class="uppercase font-semibold opacity-60 mb-2" :class="{'text-red-500': error.db || notValid.db, 'uppercase font-semibold opacity-60 mb-2': true}">Day</h1>
         <input
